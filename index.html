@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Fils Assan MEFIRE</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .hero-section {
+            min-height: 100vh;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-color);
+            transition: width 0.3s;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .skill-card {
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        
+        .skill-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .project-card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .project-card:hover {
+            transform: scale(1.02);
+        }
+        
+        .section-title {
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Fils Assan MEFIRE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h1 class="display-4 fw-bold mb-4">Fils Assan MEFIRE</h1>
+                    <h2 class="h3 mb-4">Ingénieur en cybersécurité et investigation numérique</h2>
+                    <p class="lead">Passionné par la sécurisation des infrastructures et la protection des données sensibles</p>
+                    <a href="#contact" class="btn btn-outline-light btn-lg mt-3">Me contacter</a>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <img src="pp.jpeg" alt="Profile Pic" class="img-fluid rounded-circle">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="section-title mb-5">À propos</h2>
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <p class="lead">Je teste la robustesse de vos systèmes d'informations pour découvrir les vulnérabilités avant que les méchants hackers ne s'en servent pour vous nuire.</p>
+                    <div class="mt-4">
+                        <h3>Formation</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <h5>Ingénieur en cybersécurité et Investigation Numérique</h5>
+                                <p class="text-muted">École Nationale Supérieure Polytechnique, 2021-2024</p>
+                            </li>
+                            <li class="mb-3">
+                                <h5>Master recherche en SECURITE INFORMATIQUE</h5>
+                                <p class="text-muted">Université de Yaoundé 1, 2022-2024</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title">Certifications</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Certified Ethical Hacker (En cours)</li>
+                                <li class="list-group-item">Foundation Level of Threat Intelligence</li>
+                                <li class="list-group-item">ISO/IEC 27001:2022 Information Security Associate</li>
+                                <li class="list-group-item">Practical Ethical Hacking</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title mb-5">Compétences</h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="flip-left">
+                    <div class="card skill-card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title"><i class="fas fa-shield-alt text-primary me-2"></i>Blue Team</h4>
+                            <ul class="list-unstyled">
+                                <li>SIEM et XDR (Wazuh, Splunk)</li>
+                                <li>SOAR (Shuffle, TheHive)</li>
+                                <li>Compliance (ISO 27001,ISO 27005)</li>
+                                <li>Threat Intelligence</li>
+                                <li>Vulnerability Management</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="flip-left" data-aos-delay="100">
+                    <div class="card skill-card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title"><i class="fas fa-code text-primary me-2"></i>Programmation</h4>
+                            <ul class="list-unstyled">
+                                <li>Python</li>
+                                <li>Solidity for web3 Dapps</li>
+                                <li>JavaScript</li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="flip-left" data-aos-delay="200">
+                    <div class="card skill-card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title"><i class="fas fa-skull text-danger me-2"></i>Red Team</h4>
+                            <ul class="list-unstyled">
+                                <li><b>Web</b> : Burpsuite, OWASP ZAP, MetaSploit</li>
+                                <li><b>Scan réseau</b>: Nmap, Advanced IP Scanner</li>
+                                <li><b>scan de vulnérabilités</b>: OpenVAS, Nessus</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="section-title mb-5">Projets Réalisés</h2>
+            <div class="row g-4">
+                <div class="col-lg-6" data-aos="zoom-in">
+                    <div class="project-card">
+                        <div class="card">
+                            <img src="AMITY.png" class="card-img-top" alt="Logo of AMITY Project">
+                            <div class="card-body">
+                                <h5 class="card-title">AMITY : API Pentest with AI</h5>
+                                <p class="card-text">Développement d'une application innovante de scan de vulnérabilités d'API intégrant l'Intelligence Artificielle.</p>
+                                <div class="d-flex gap-2">
+                                    <span class="badge bg-primary">Python</span>
+                                    <span class="badge bg-secondary">API Security</span>
+                                    <span class="badge bg-success">AI</span>
+                                    <span class="badge bg-warning">Pentesting</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="project-card">
+                        <div class="card">
+                            <img src="radar.jpg" class="card-img-top" alt="Project 2">
+                            <div class="card-body">
+                                <h5 class="card-title">RADAR: enumeration toolkit</h5>
+                                <p class="card-text">RADAR is a tool to do reconnaissance which is the first and the one of most important steps of red teaming operation : bug bounty or penetration testing. The tool use sublist3r for subdomains enumeration and scan each subdomain to have open ports and version of service running on. The tool is fit to help you respect wanted scope, users can choose subdomains to scan or not.</p>
+                                <div class="d-flex gap-2">
+                                    <span class="badge bg-primary">Python</span>
+                                    <span class="badge bg-secondary">Web App Security</span>
+                                    <span class="badge bg-success">Research</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6" data-aos="zoom-in">
+                    <div class="project-card">
+                        <div class="card">
+                            <img src="NetX.png" class="card-img-top" alt="Logo of AMITY Project">
+                            <div class="card-body">
+                                <h5 class="card-title">NetX : Network recon toolkit</h5>
+                                <p class="card-text">Set of tools to help the automation of various task in Network Pentest</p>
+                                <div class="d-flex gap-2">
+                                    <span class="badge bg-primary">Python</span>
+                                    <span class="badge bg-secondary">Network Security</span>
+                                    <span class="badge bg-success">AI</span>
+                                    <span class="badge bg-warning">Pentesting</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title mb-5">Contact</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow-sm" data-aos="fade-up">
+                        <div class="card-body">
+                            <div class="row mb-4">
+                                <div class="col-md-4 text-center">
+                                    <i class="fas fa-envelope fa-2x mb-2 text-primary"></i>
+                                    <p>mefire023@gmail.com</p>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <i class="fas fa-phone fa-2x mb-2 text-primary"></i>
+                                    <p>+237 6 95 12 42 70</p>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <i class="fas fa-map-marker-alt fa-2x mb-2 text-primary"></i>
+                                    <p>Douala, Cameroun</p>
+                                </div>
+                            </div>
+                            <form>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Votre nom">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Votre email">
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" rows="5" placeholder="Votre message"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Envoyer</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>© 2024 Fils Assan MEFIRE. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>
